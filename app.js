@@ -18,7 +18,7 @@ function fromEuroToDollar (euro) {
 }
 
 function fromDollarToYen (yen){
-    return yen = (oneEuroIs["JPY"] / fromEuroToDollar) * (fromEuroToDollar / oneEuroIs["USD"])
+    return yen = (oneEuroIs["JPY"] / fromEuroToDollar()) * (fromEuroToDollar() / oneEuroIs["USD"])
 }
-console.log(fromEuroToDollar(fromDollarToYen(1)))
+console.log(fromEuroToDollar(fromDollarToYen(10)))
 
