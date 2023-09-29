@@ -22,19 +22,3 @@ function fromDollarToYen (yen){
 }
 console.log(fromEuroToDollar(fromDollarToYen(1)))
 
-// 1 euro = 1.206 USD 1 euro = 127.9 JPY
-
-// Por lo tanto,
-
-// 1 USD = (127.9 JPY / 1 euro) * (1 euro / 1.206 USD) = 106.08 JPY.
-
-// Por lo tanto, 1 dólar estadounidense (USD) equivale a 106.08 yenes japoneses (JPY
-// let dollarToEuro = function(dollarValue) {
-// 	return dollarValue * 0.89;
-// }
-// let euroToYen = function(euroValue) {
-// 	return euroValue * 124.15;
-// }
-// ///***** YOUR CODE BELOW ↓ ******///
-
-// console.log(euroToYen(dollarToEuro(137)))
