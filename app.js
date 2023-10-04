@@ -6,19 +6,25 @@
 
 // module.exports = { sum };
 
-// one euro is:
-let oneEuroIs = {
-    "JPY": 127.9, // japan yen
-    "USD": 1.206, // us dollar
-    "GBP": 0.8, // british pound
-}
+ //one euro is:
+ let oneEuroIs = {
+     "JPY": 127.9, // japan yen
+     "USD": 1.206, // us dollar
+     "GBP": 0.8, // british pound
+ }
 
-function fromEuroToDollar (euro) {
-    return euro * oneEuroIs["USD"]
-}
 
-function fromDollarToYen (yen){
-    return yen = (oneEuroIs["JPY"] / fromEuroToDollar()) * (fromEuroToDollar() / oneEuroIs["USD"])
-}
-console.log(fromEuroToDollar(fromDollarToYen(10)))
+ function fromEuroToDollar(euro) {
+     return euro * oneEuroIs["USD"]
+ }
+//  let dollar = fromEuroToDollar(10);
+
+function fromDollarToYen(dollar) {
+    return dollar / oneEuroIs["USD"] * oneEuroIs["JPY"]
+ }
+
+
+ console.log(fromEuroToDollar(10))
+ console.log(fromDollarToYen(1))
+
 
